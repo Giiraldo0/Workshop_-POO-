@@ -14,7 +14,7 @@ public class Parqueadero {
 
     public boolean parquearCarro(Carro carro, int fila, int columna) {
         if (fila < 0 || fila >= filas || columna < 0 || columna >= columnas || matrizParqueadero[fila][columna] != null){
-            System.out.println("No se puede estacionar el vehiculo.");
+            System.out.println("No se puede estacionar el vehiculo, la zelda está ocupada con otro vehículo");
             return false;
         }
         matrizParqueadero[fila][columna] = carro;
